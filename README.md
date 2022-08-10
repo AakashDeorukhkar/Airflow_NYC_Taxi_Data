@@ -1,6 +1,7 @@
 # Ingesting NYC Yellow Taxi Data to GCP using Airflow on Docker
 
-Hosted Apache Airflow on Docker to manage the workflow of a data engineering pipeline. The DAG created has 3 major tasks:
+Hosted Apache Airflow on Docker to manage the workflow of a data engineering pipeline. The data is the NYC Yellow Taxi data from January 2022. This data is extracted from the source, transformed using Python, and then loaded on the Data Warehouse(BigQuery) on Google Cloud Platform.
+#### The DAG created has 3 major tasks:
 
 #### 1) Download Dataset Task: 
 This task is responsible to download the dataset from the dataset URL and save it locally on the Docker Airflow image by performing a Bash operation. 
